@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #bf64c2;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(5, 60px);
+    gap: 10px;
+}
+
+.box {
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.box.red {
+    background-color: red;
+}
